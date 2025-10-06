@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Blackjack — Casino Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Blackjack</div>
+    <div>
+      <span id="userDisplay" class="muted"></span>
+      <button onclick="location.href='lobby.html'" class="small alt">Lobby</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card wide">
+      <h2>Blackjack</h2>
+      <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start">
+        <div style="flex:1;min-width:320px">
+          <div style="font-weight:700;margin-bottom:6px">Dealer</div>
+          <div id="dealerHand" class="hand"></div>
+          <div id="dealerValue" class="status"></div>
+
+          <div style="margin-top:10px;font-weight:700;margin-bottom:6px">Player</div>
+          <div id="playerHand" class="hand"></div>
+          <div id="playerValue" class="status"></div>
+
+          <div class="actions" style="margin-top:12px">
+            <input id="blackjackBet" type="number" value="200" min="1" class="bet-input">
+            <button id="dealBtn" class="small">DEAL</button>
+            <button id="hitBtn" class="small" disabled>HIT</button>
+            <button id="standBtn" class="small" disabled>STAND</button>
+          </div>
+        </div>
+
+        <div style="width:300px">
+          <div class="card">
+            <div style="font-weight:800">About</div>
+            <div class="muted">Dealer hits soft 17. Blackjack pays 3:2.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script src="js/main.js"></script>
+<script src="js/blackjack.js"></script>
+</body>
+</html>

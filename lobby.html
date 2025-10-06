@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Lobby — Casino Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Casino Demo</div>
+    <div>
+      <span id="userDisplay" class="muted"></span>
+      <button id="logout" class="small alt">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="row between">
+        <h2>Welcome, <span id="userName"></span></h2>
+        <div class="wallet">Balance: <strong id="balance"></strong></div>
+      </div>
+      <p class="muted">Pilih permainan untuk belajar logika & UI. Semua play-money.</p>
+    </section>
+
+    <section class="grid cards">
+      <!-- Game cards -->
+      <a class="game-card" href="slot.html">
+        <div class="game-hero slot-hero"></div>
+        <h3>Slot Machine</h3>
+        <p class="muted">Slot klasik, kombinasi & jackpot.</p>
+      </a>
+
+      <a class="game-card" href="zeus.html">
+        <div class="game-hero zeus-hero"></div>
+        <h3>Zeus Jackpot</h3>
+        <p class="muted">Tema Zeus — peluang jackpot besar.</p>
+      </a>
+
+      <a class="game-card" href="roulette.html">
+        <div class="game-hero roulette-hero"></div>
+        <h3>Roulette</h3>
+        <p class="muted">Taruhan warna (red/black).</p>
+      </a>
+
+      <a class="game-card" href="blackjack.html">
+        <div class="game-hero blackjack-hero"></div>
+        <h3>Blackjack</h3>
+        <p class="muted">Hit / Stand — belajar strategi dasar.</p>
+      </a>
+
+      <a class="game-card" href="coin.html">
+        <div class="game-hero coin-hero"></div>
+        <h3>Coin Flip</h3>
+        <p class="muted">Heads vs Tails.</p>
+      </a>
+
+      <a class="game-card" href="dice.html">
+        <div class="game-hero dice-hero"></div>
+        <h3>Dice</h3>
+        <p class="muted">Tebak angka 1–6.</p>
+      </a>
+    </section>
+  </main>
+
+<script src="js/main.js"></script>
+</body>
+</html>

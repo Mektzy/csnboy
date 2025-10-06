@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Welcome — Casino Demo (Local)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-center">
+  <div class="card narrow">
+    <div class="logo-wrap"><div class="logo-mark">CD</div></div>
+    <h1>Selamat datang — Casino Demo</h1>
+    <p class="muted">Hanya untuk pembelajaran. Semua play-money.</p>
+
+    <label>Nama pengguna</label>
+    <input id="username" placeholder="Nama kamu" />
+
+    <label>Saldo awal (play-credits)</label>
+    <input id="startCredits" type="number" min="100" value="5000" />
+
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <button id="loginBtn">Masuk</button>
+      <button id="guestBtn" class="alt">Masuk sebagai Guest</button>
+    </div>
+
+    <p class="muted small">Project ini dijalankan lokal (XAMPP). Klik Masuk lalu buka Lobby.</p>
+  </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

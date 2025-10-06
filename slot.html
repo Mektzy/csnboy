@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Slot — Casino Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Slot Machine</div>
+    <div>
+      <span id="userDisplay" class="muted"></span>
+      <button onclick="location.href='lobby.html'" class="small alt">Lobby</button>
+    </div>
+  </header>
+
+  <main class="container center">
+    <section class="card wide">
+      <h2>Slot Machine</h2>
+      <div class="slot-area">
+        <div class="reels" id="reels">
+          <div class="reel" id="r0">🍒</div>
+          <div class="reel" id="r1">🍋</div>
+          <div class="reel" id="r2">🔔</div>
+        </div>
+
+        <div class="controls">
+          <input id="slotBet" type="number" value="100" min="1" class="bet-input">
+          <button id="spinBtn" class="big">SPIN</button>
+          <button id="maxBet" class="small">Max</button>
+        </div>
+
+        <div id="slotStatus" class="status muted">Pilih taruhan lalu SPIN.</div>
+      </div>
+    </section>
+  </main>
+
+<script src="js/main.js"></script>
+<script src="js/slot.js"></script>
+</body>
+</html>

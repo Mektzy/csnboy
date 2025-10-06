@@ -1,0 +1,43 @@
+/* style.css - tema gelap modern */
+:root{
+  --bg:#071427; --card:#0f1724; --accent:#f59e0b; --muted:#9aa7c7;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, sans-serif;background:linear-gradient(180deg,#03101a,#071427);color:#e6eef8}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:linear-gradient(90deg,#071827,transparent);border-bottom:1px solid rgba(255,255,255,0.03)}
+.brand{font-weight:800;color:var(--accent)}
+.container{max-width:1100px;margin:20px auto;padding:0 16px}
+.card{background:var(--card);padding:18px;border-radius:12px;margin-bottom:14px;box-shadow:0 10px 30px rgba(2,6,23,.5)}
+.narrow{width:360px;padding:22px;text-align:center}
+.logo-mark{width:72px;height:72px;border-radius:12px;background:linear-gradient(180deg,#0f2740,#06263a);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent);margin:0 auto 10px}
+.muted{color:var(--muted)}
+.small{font-size:13px;padding:6px 10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,.04);color:var(--muted);cursor:pointer}
+.alt{background:transparent;border:1px solid rgba(255,255,255,.06);color:var(--muted)}
+.page-center{display:flex;align-items:center;justify-content:center;height:100vh}
+input[type="text"],input[type="number"],select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:transparent;color:#fff;margin-top:6px}
+button{background:var(--accent);border:0;color:#08101a;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:700}
+.row{display:flex;align-items:center}
+.between{justify-content:space-between}
+.wallet{background:linear-gradient(180deg,#081725,#0d2236);padding:8px;border-radius:8px;font-weight:700}
+.grid.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.game-card{text-decoration:none;color:inherit;background:linear-gradient(180deg,#091827,#071427);padding:12px;border-radius:10px;display:flex;flex-direction:column;gap:8px;align-items:flex-start;transition:transform .18s,box-shadow .18s}
+.game-card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(5,10,20,.5)}
+.game-hero{width:100%;height:110px;border-radius:8px;background:linear-gradient(180deg,#072033,#0b2436);display:block}
+.slot-hero{background-image:linear-gradient(180deg,#0b2436,#071427);background-size:cover}
+.zeus-hero{background-image:linear-gradient(180deg,#1a2130,#071427);background-size:cover}
+.roulette-hero{background-image:linear-gradient(180deg,#1b140e,#071427);background-size:cover}
+.blackjack-hero{background-image:linear-gradient(180deg,#061b12,#071427);background-size:cover}
+.coin-hero{background-image:linear-gradient(180deg,#14202a,#071427);background-size:cover}
+.dice-hero{background-image:linear-gradient(180deg,#211018,#071427);background-size:cover}
+.center{text-align:center}
+.wide{width:100%}
+.slot-area{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:8px}
+.reels{display:flex;gap:12px}
+.reel{width:110px;height:110px;border-radius:12px;background:linear-gradient(180deg,#062033,#071a2a);display:flex;align-items:center;justify-content:center;font-size:40px;box-shadow:inset 0 -10px 20px rgba(0,0,0,.6)}
+.bet-input{width:120px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:transparent;color:#fff}
+.controls{display:flex;gap:8px;align-items:center}
+.status{font-size:14px;color:var(--muted)}
+.big{font-size:16px;padding:10px 16px}
+.hand{display:flex;gap:8px;align-items:center;justify-content:center;margin:8px 0}
+.actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+footer{padding:20px;text-align:center;color:var(--muted)}

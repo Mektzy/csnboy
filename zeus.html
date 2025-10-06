@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Zeus Jackpot — Casino Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Zeus Jackpot</div>
+    <div>
+      <span id="userDisplay" class="muted"></span>
+      <button onclick="location.href='lobby.html'" class="small alt">Lobby</button>
+    </div>
+  </header>
+
+  <main class="container center">
+    <section class="card wide">
+      <h2>Zeus Jackpot</h2>
+      <p class="muted">Special slot bertema Zeus. Triple ⚡ = Jackpot besar.</p>
+
+      <div class="slot-area">
+        <div class="reels" id="zreels">
+          <div class="reel" id="z0">🍇</div>
+          <div class="reel" id="z1">🍇</div>
+          <div class="reel" id="z2">🍇</div>
+        </div>
+
+        <div class="controls">
+          <input id="zeusBet" type="number" value="200" min="1" class="bet-input">
+          <button id="zeusSpin" class="big">SPIN ⚡</button>
+        </div>
+
+        <div id="zeusStatus" class="status muted">Taruhan dan coba dapatkan ⚡⚡⚡</div>
+      </div>
+    </section>
+  </main>
+
+<script src="js/main.js"></script>
+<script src="js/zeus.js"></script>
+</body>
+</html>

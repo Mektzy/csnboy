@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Roulette — Casino Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Roulette</div>
+    <div>
+      <span id="userDisplay" class="muted"></span>
+      <button onclick="location.href='lobby.html'" class="small alt">Lobby</button>
+    </div>
+  </header>
+
+  <main class="container center">
+    <section class="card wide">
+      <h2>Roulette (Red / Black)</h2>
+
+      <div class="slot-area">
+        <div class="reel" id="wheel">—</div>
+
+        <div class="controls">
+          <input id="rouletteBet" type="number" value="200" min="1" class="bet-input">
+          <select id="rouletteChoice" class="bet-input">
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+          </select>
+          <button id="spinRoulette" class="big">SPIN</button>
+        </div>
+
+        <div id="rouletteStatus" class="status muted">Taruhkan pada Warna.</div>
+      </div>
+    </section>
+  </main>
+
+<script src="js/main.js"></script>
+<script src="js/roulette.js"></script>
+</body>
+</html>

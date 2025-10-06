@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Dice — Casino Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Dice</div>
+    <div>
+      <span id="userDisplay" class="muted"></span>
+      <button onclick="location.href='lobby.html'" class="small alt">Lobby</button>
+    </div>
+  </header>
+
+  <main class="container center">
+    <section class="card wide">
+      <h2>Dice (Tebak angka 1–6)</h2>
+
+      <div class="slot-area">
+        <div class="reel" id="diceDisplay">🎲</div>
+
+        <div class="controls">
+          <select id="diceChoice" class="bet-input">
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+          </select>
+          <input id="diceBet" type="number" value="30" min="1" class="bet-input">
+          <button id="rollDice" class="big">ROLL</button>
+        </div>
+
+        <div id="diceStatus" class="status muted">Pilih angka lalu roll.</div>
+      </div>
+    </section>
+  </main>
+
+<script src="js/main.js"></script>
+<script src="js/dice.js"></script>
+</body>
+</html>
